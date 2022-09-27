@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+  background-color: #0c3255;
+}
+
+body {
+  max-width: 120rem;
+  padding: 6.4rem 3.2rem;
+  margin: 0 auto;
+}
+
+.logo-box {
+  justify-content: center;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.logo-img {
+  width: 30%;
+}
+
+.app-name {
+  font-size: 4.8rem;
+  color: #a5d8ff;
+}
+
+.posts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.single-post {
+  padding: 1rem;
+  text-decoration: none;
+  border: solid 1px black;
+  border-radius: 10px;
+  background-color: #a5d8ff;
+  color: #030e18;
+  transition: all 0.2s;
+}
+
+.single-post:hover,
+.single-post:active {
+  background-color: #2686e0;
+  color: #ebf4fc;
+}
+
+.i-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  background-color: aqua;
+}
+
+.post-desc {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+/*
+************************
+SELECTED POST COMPONENT
+************************
+*/
+
+.back-button {
+  padding: 10px;
+  text-decoration: none;
+  background-color: #a5d8ff;
+  color: #030e18;
+  border-radius: 10px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  display: inline-block;
+  transition: all 0.3s;
+  margin-bottom: 2.5rem;
+}
+
+.back-button:hover {
+  background-color: #2686e0;
+  color: #ebf4fc;
+}
+
+.profile {
+  background-color: #2686e0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  border-radius: 10px;
+  padding: 2rem 2rem;
+}
+
+.profile-avatar {
+  width: 30%;
+  margin-bottom: 2rem;
+  border-radius: 50%;
+}
+
+.prof-header {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #c5f6fa;
+}
+
+.prof-detail {
+  font-size: 1.6rem;
+  color: #ebf4fc;
+}
+
+.toggle-profile {
+  cursor: pointer;
+  font-size: 1.4rem;
+  color: darkcyan;
+  transition: all 0.3s;
+}
+
+.toggle-profile:hover {
+  color: #ebf4fc;
+}
+
+.selected {
+  background-color: #030e18;
+  color: #a5d8ff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 5rem;
+  margin-top: 1rem;
+}
+
+.comments {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.comment {
+  background-color: #73afe7;
+  padding: 1.5rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.post-title {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
